@@ -17,10 +17,10 @@ public class Task {
                     inputStream = new BufferedReader(new FileReader(file));
                     while ((line = inputStream.readLine()) != null) {
 
-                        String lineNumbers = line.replaceAll("[^0-9]+", " "); // replace letter sections with emptys
+                        String lineNumbers = line.replaceAll("[^0-9]+", " "); // replace letter sections with empty
                                                                               // spaces
                         // System.out.println(Arrays.asList(lineNumbers.trim().split(" "))); // extract
-                        // all numbers from array to an array
+                        // all numbers from string to an integer array
                         for (String i : Arrays.asList(lineNumbers.trim().split(" "))) {
                             if (Integer.parseInt(i) >= 10) {
                                 System.out.println(line);
